@@ -1,0 +1,12 @@
+$first-color: #f9f7f7;
+$second-color: #dbe2ef;
+$third-color: #3f72af;
+$fourth-color: #112d4e;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $third-color;
+}
