@@ -8,17 +8,26 @@ $xd: rgb(14, 16, 19);
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  width: 100%;
+  height: 100vh;
+}
+
 body {
+  background-color: $xd;
   section {
-    background-color: $xd;
+    background-color: inherit;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     text-align: left;
     align-items: center;
     width: 100%;
     height: 100vh;
+  }
+  .holder {
+    display: flex;
   }
   .content {
     color: $third-color;
@@ -27,10 +36,14 @@ body {
     align-items: center;
     align-self: center;
     align-content: center;
-    width: 50%;
-
+    width: 70%;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 100px;
+    padding-left: 10%;
+
+    p {
+      width: 100%;
+    }
+
     span {
       color: $second-color;
       position: relative;
@@ -63,8 +76,9 @@ body {
     }
   }
   .image {
-    width: 20vh;
-    height: 20vh;
+    width: 50vmin;
+    height: 60vmin;
+    margin-left: 50px;
     img {
       width: 100%;
       height: 100%;
@@ -103,6 +117,12 @@ body {
 }
 
 @media (max-width: 1000px) {
+  .holder {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30%;
+  }
   body section {
     display: flex;
     flex-direction: column;
@@ -115,9 +135,20 @@ body {
     }
   }
   body .content {
-    font-size: 10px;
-    padding: 0%;
+    font-size: 12px;
+    margin-top: 20px;
+
     width: 100%;
+    span {
+      font-size: 32px;
+      &::before {
+        display: none;
+      }
+    }
+    button {
+      width: 50%;
+      font-size: 6px;
+    }
   }
   body .nav-links {
     flex-direction: row;
