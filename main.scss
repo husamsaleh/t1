@@ -31,6 +31,7 @@ body {
   }
   .content {
     color: $third-color;
+    position: relative;
     font-size: 20px;
     text-align: left;
     align-items: center;
@@ -48,15 +49,16 @@ body {
       color: $second-color;
       position: relative;
       font-size: 62px;
-      padding-left: 10%;
+      padding-left: 6%;
       &::before {
         content: "";
-        width: 10%;
-        border-bottom: solid 1px #fff;
+        background: #eeeeee;
         position: absolute;
         left: 0;
-        top: 50%;
-        z-index: 1;
+        top: 29px;
+        height: 4px;
+        width: 40px;
+        border-radius: 10px;
       }
     }
     button {
@@ -121,7 +123,7 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 10vh;
   }
   body section {
     display: flex;
@@ -146,7 +148,7 @@ body {
       }
     }
     button {
-      width: 50%;
+      width: fit-content;
       font-size: 6px;
     }
   }

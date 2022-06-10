@@ -41,6 +41,7 @@ body .holder {
 }
 body .content {
   color: #f0f5f9;
+  position: relative;
   font-size: 20px;
   text-align: left;
   -webkit-box-align: center;
@@ -62,16 +63,17 @@ body .content span {
   color: #00adb5;
   position: relative;
   font-size: 62px;
-  padding-left: 10%;
+  padding-left: 6%;
 }
 body .content span::before {
   content: "";
-  width: 10%;
-  border-bottom: solid 1px #fff;
+  background: #eeeeee;
   position: absolute;
   left: 0;
-  top: 50%;
-  z-index: 1;
+  top: 29px;
+  height: 4px;
+  width: 40px;
+  border-radius: 10px;
 }
 body .content button {
   background: #00adb5;
@@ -152,7 +154,7 @@ body .nav-links button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 30%;
+    margin-top: 10vh;
   }
 
   body section {
@@ -183,7 +185,9 @@ body .nav-links button:hover {
     display: none;
   }
   body .content button {
-    width: 50%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     font-size: 6px;
   }
 
